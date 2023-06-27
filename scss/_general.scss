@@ -1,0 +1,485 @@
+//
+//	GENERAL
+// ------------------------------------------------------
+// 
+
+// border-box
+
+*,
+*::before,
+*::after {
+	@include box-sizing( border-box );
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-kerning: auto;
+}
+
+html {	
+
+	font-size: 100%;
+    line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+
+	scroll-behavior: smooth;
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font: {
+		font-family: Tahoma, Verdana, sans-serif;
+	};
+
+	overflow: hidden;
+}
+
+a {
+	// color: inherit;
+	background-color: transparent;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.container {
+	padding: 0 2rem;
+}
+
+h1,h2,h3 {
+	margin: 0;
+}
+
+.post-title {   
+    font: {
+        size: clamp( 35px, 3.2vw, 4.1rem);
+        // family: $font-family-sans;
+        family: 'Merriweather Sans', sans-serif;;
+        weight: 600;
+        }    
+}
+
+.post {
+    font: {
+        size: clamp( 21px, 1.5vw, 350%);
+        // family: $font-family-sans;
+        family: 'Merriweather Sans', sans-serif;
+        weight: 600;
+        }
+
+    color: #000;
+}
+
+.text {
+	font: {
+        family: 'Lexend Deca', sans-serif;
+        weight: 300;
+        size: clamp( 15px, 1.1vw, 1.3rem)
+    }
+}
+
+@media screen and ( max-width: 515px ) {
+
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	
+		height: inherit;
+		width: 100%;
+	}
+
+	.post-contact {
+		display: flex;
+		justify-content: center;
+
+		width: 100%;
+	}
+
+	.favs {
+		width: 100%;
+		align-items: center;
+	}
+
+	.work {
+		padding: 2rem 0 2.5rem 0;
+
+		gap: 1rem;
+	}
+
+	.container-links {
+		display: flex;
+		flex-direction: column;
+		max-width: 25rem;
+	}
+}
+
+@media screen and ( max-height: 520px ) {
+	.menu-top {
+		visibility: hidden;
+	}
+
+	.menu-side {
+		visibility: visible;
+	}
+
+	// section one
+	.avatar-svg {
+		visibility: hidden;
+	}
+	
+	// section two
+
+	section.section-second{
+		background: #eee;
+	}
+
+	.about-me {
+		max-height: 50rem;
+
+		padding: 2rem 0 2rem 0;
+	}
+
+	// section four
+
+	.work {
+		padding: 2rem 0 2.5rem 0;
+
+		gap: 1rem;
+	}
+}
+
+@media screen and ( max-width: 770px ) {
+
+	.section-first {
+		background: $color-bg-left;
+	}
+
+	.container {
+		padding: 0 1rem 0 1rem;
+	}
+
+	.post-title {   
+		font: {
+			size: clamp( 35px, 6.5vw, 4.1rem);
+			family: 'Merriweather Sans', sans-serif;;
+			weight: 600;
+		}    
+	}
+
+	.text {
+		font: {
+			family: 'Lexend Deca', sans-serif;
+			weight: 300;
+			size: clamp( 13px, 2vw, 1.3rem)
+		}	
+	}
+
+	// nav
+	.nav-header {
+		padding: 0 .2rem;
+		margin-top: .0rem;
+		background: $color-bg-left;
+
+		min-height: 40px;
+		overflow: hidden;
+	}
+
+	.nav-side {
+		position: relative;
+
+		z-index: 20;
+	}
+	.menu-top {
+		visibility: hidden;
+	}
+
+	.menu-side {
+		visibility: visible;
+	}
+
+	.btn-menu {
+		right: 0;
+	}
+
+	.sideMenu {
+		visibility: hidden;
+	}
+
+	// first section
+	.section-first {
+		padding: 1.1vh 0 0 0;
+	}
+
+	.section-second {
+		min-height: auto;
+	}
+
+	.main-content {
+		flex-direction: column;
+	}
+
+	.avatar {
+		margin: 0;
+	}
+
+	.avatar-mobile {
+		display: flex;
+
+		height: 79vh;
+
+		align-items: center;
+		justify-content: center;
+
+		margin-top: 1rem;
+
+		width: 100%;
+
+		background: $color-bg-left;
+
+		padding: 0 1rem 0 1rem;
+	}
+
+	.avatar-svg {
+		width: 100%;
+    	height: 100%;
+		top: 20;
+
+		margin-top: 13rem;
+	}
+
+	.waves {
+		visibility: hidden;
+	}
+
+	.photo {
+		display: inline-block;
+		max-height: 60vh;
+		max-width: 80vw;
+	}
+
+	.waves1 {
+		stroke: $color-bg-right;
+	}
+
+	.inner-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		width: 100%;
+		min-height: 30vh;
+		top: -1rem;
+		padding: 0 2rem 2rem 2rem;
+
+		background: $color-bg-right;
+	}
+	
+	.inner-text div{
+		align-self: flex-start;
+		margin-bottom: 1rem;
+		padding-left: 1rem;
+	}
+
+	.name {
+		font: {
+			size: clamp( 35px, 6.5vw, 4.1rem);
+			family: 'Merriweather Sans', sans-serif;;
+			weight: 600;
+		}  
+	}
+
+	.welcome {
+		visibility: hidden;
+		display: inline;
+	}
+
+	.target {
+		width: 90%;
+		height: auto;
+
+		margin-top: 1em;
+
+		max-width: 40ch;
+	}
+
+// //////////////////
+// section two
+// //////////////////
+
+	.section-second {
+		// height: auto;
+
+		background: #eee;
+	}
+
+	.post-about-me {
+		margin-top: 2rem;
+	}
+
+	.introduce {
+		text-align: left;
+	}
+
+	.introduce:last-child{
+		margin-bottom: 0;
+		padding-bottom: 2rem;
+	}
+
+// //////////////////
+// section three
+// //////////////////
+	.skills {
+		flex-direction: column;
+
+		align-items: center;
+
+		width: 100%;
+
+		margin-top: 0;
+
+		z-index: 1;    
+	}
+
+	.background {
+		visibility: hidden;
+	}
+
+	.post-skills {
+		margin-top: 2rem;
+		margin-bottom: .1rem;
+
+		align-self: flex-start;
+	}
+
+	.post-education {
+		margin-top: 2rem;
+	}
+
+	.chart-bar {
+		padding: 0 0 2rem 0;
+
+		width: clamp( 10rem ,29rem, 30rem );
+
+		max-width: 85%;
+	}
+
+	.element-bar {
+		width: 100%;
+
+		max-width: 100%;
+	}
+
+	.education {
+		width: auto;
+		height: auto;
+		min-height: 0;
+		max-width: 100%;
+
+		padding: 0rem 1rem 2rem 1rem; 
+		margin-right: 0;
+	}
+
+// //////////////////
+// section four
+// //////////////////
+
+	.work {
+		height: inherit;
+		max-width: 19rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+
+		padding: 2rem 0 2.5rem 0;
+
+		gap: 1rem;
+	}
+
+	.container-links {
+		display: flex;
+		flex-direction: column;
+		max-width: 25rem;
+	}
+
+	.post-work {
+		margin-bottom: 1rem;
+	}
+
+	.container-links {
+		grid-template-columns: 100%;
+		grid-template-rows: 25vh 25vh 25vh 25vh;
+
+		margin-bottom: 4rem;
+	}
+
+	div.item {
+		justify-self: center;
+		align-self: unset;
+
+		width: 100%;
+		height: 87%;
+	}
+
+// //////////////////
+// footer
+// //////////////////
+
+	.section-footer {
+		justify-content: unset;
+		min-height: 34vh;
+		padding-bottom: 2rem;
+		padding-top: 2rem;
+	}
+
+	.favs {
+		display: flex;
+		flex-direction: column;
+
+		width: 50%;
+	}
+
+	.fav {
+		margin-top: 1.5rem;
+	}
+
+	.favicon-tel,
+	.favicon-email {
+		width: 1em;
+	}
+} 
+
+@media screen and (max-width: 770px) {
+	// add scrolling with wheel
+	body {
+		overflow: visible;
+	}
+}
+
+@media screen and (max-height: 628px) {
+	// add scrolling with wheel
+	body {
+		overflow: visible;
+	}
+}
+
+@media (min-width: 770px) and (max-width: 1110px){
+	.main-content {
+		margin-top: 4rem;
+	}
+
+	.inner-text {
+		padding-left: 0;
+	}
+}
+
+@media screen and ( max-width: 1110px ) {
+
+	.main-content {
+		gap:2%;
+	}
+}

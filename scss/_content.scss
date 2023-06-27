@@ -1,0 +1,172 @@
+//
+//	CONTENT
+// ------------------------------------------------------
+//
+
+/*
+// side Nav
+*/
+.sideMenu {
+    position: fixed;
+    z-index: 99;
+    right: clamp( 5%, 5.5%, 10%);
+    bottom: 50%;
+}
+
+.svg-menu {
+    position: absolute;
+
+    display: block;
+
+    width: 19rem;
+    height: 15rem;
+}
+
+.hex-btn:hover,
+.hex-btn:active {
+    fill: #e6cfcf;
+}
+
+.hex-btn{
+fill: transparent;
+stroke: #44512d;
+stroke-width: .5px;
+stroke-linecap: square;
+
+border: 1px solid #000;
+}
+
+.filler1,
+.filler2{
+  fill: transparent;
+  stroke: rgb(34, 3, 3);
+  stroke-width: 2.3px;
+  stroke-linecap: square;
+}
+
+.filler1,
+.filler2 {
+    stroke-dasharray: 290;
+    // stroke-dashoffset: 300;
+}
+
+.firstHexLeft,
+.firstHexRight{
+  fill: transparent;
+  stroke: rgb(34, 3, 3);
+  stroke-width: 3.3px;
+  stroke-linecap: square;
+}
+
+.actual-page path {
+    fill: #5ada55;
+}
+
+/*
+// sections
+*/
+.section-first,
+.section-second,
+.section-third,
+.section-fourth {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+// Section footer
+*/
+
+.section-footer {
+    display: flex;
+    flex-direction: row;
+
+    min-height: 40vh;
+
+    background-color: $color-bg-right;
+}
+
+.contact {  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: inherit;
+    width: 100%;
+}
+
+.post-contact {
+    color: $color-bg-left;
+
+    width: 50%;
+
+    text-align: center;
+}
+
+.favs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    width: 50%;
+}
+
+.fav {
+    display: flex;
+    flex-direction: row;
+}
+
+.favicon-tel {
+    fill: $color-bg-left
+}
+
+.favicon-email {
+    fill: transparent;
+    stroke:$color-bg-left;
+    stroke-width: 2;
+    stroke-linecap: round; 
+    stroke-linejoin: round;
+}
+
+.favicon-git {
+    fill: $color-bg-left
+}
+
+.favicon-tel,
+.favicon-email,
+.favicon-git {
+	width: 1em;
+}
+
+.tel,
+.email {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: $color-bg-left;
+
+    margin-left: em(8);
+
+    font: {
+        family: Lexend Deca, sans-serif;
+        size: clamp(10px, 4vw, 16px);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh;
+
+    background-color: rgb(45, 41, 41);
+    color: #fff;
+
+    font-size: clamp( 10px, 1vw, 14px );
+}
+
+

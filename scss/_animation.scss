@@ -1,0 +1,208 @@
+//
+//	ANIMATIONS JS
+// ------------------------------------------------------
+
+//
+
+/*
+// Header
+*/
+
+// Rotate home button
+.btn-rotate {
+
+    transform: rotate(40deg);
+
+    transition: .5s ease-in-out;
+
+
+    &:hover,
+    &:focus {
+        color: #000;
+
+        rotate: -40deg;
+    }
+
+    &:active{
+        transform: scale(0.87);
+        -webkit-transform: scale(0.87);
+        -moz-transform: scale(0.87);
+        -ms-transform: scale(0.87);
+        -o-transform: scale(0.87);
+}
+
+}
+
+// Fade in menu top
+.animation-in {
+    animation: fadeInLeft .4s ease-in-out;
+    -webkit-animation: fadeInLeft .4s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    0% { translate: 500px 0px; }
+    100% { translate: 0px 0px; }
+}
+
+// Fade out menu side icon
+.animation-out {
+    animation: fadeOutRight .5s ease-in-out;
+    -webkit-animation: fadeOutRight .5s ease-in-out;
+}
+
+@keyframes fadeOutRight {
+    0% { translate: 0px 0px; }
+    100% { translate: 490px 0px; }
+}
+
+// Fade in menu side icon
+.first-line {
+    animation: fadeInTop .5s ease-in-out;
+    -webkit-animation: fadeInTop .5s ease-in-out;
+}
+
+@keyframes fadeInTop {
+    0% { translate: 0px -90px; }
+    100% { translate: 0px 0px; }
+}
+
+.middle-line {
+    animation: Appear .7s ease-in-out;
+    -webkit-animation: Appear .9s ease-in-out;
+}
+
+@keyframes Appear {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+.last-line {
+    animation: fadeInRightIn .5s ease-in-out;
+    -webkit-animation: fadeInRightIn .5s ease-in-out;
+}
+
+@keyframes fadeInRightIn {
+    0% { translate: 90px 0px; }
+    100% { translate: 0px 0px; }
+}
+
+/*
+// Section third
+*/
+
+// progress bars
+.active-bar.progress-html {
+    animation: progress-html 2s ease-in-out;
+    -webkit-animation: progress-html 2s ease-in-out;
+}
+
+.active-bar.progress-css {
+  animation: progress-css 2s ease-in-out;
+  -webkit-animation: progress-css 2s ease-in-out;
+}
+
+.active-bar.progress-php {
+  animation: progress-php 2s ease-in-out;
+  -webkit-animation: progress-php 2s ease-in-out;
+}
+
+.active-bar.progress-javascript {
+  animation: progress-javascript 2s ease-in-out;
+  -webkit-animation: progress-javascript 2s ease-in-out;
+}
+
+.active-bar.progress-react {
+  animation: progress-react 2s ease-in-out;
+  -webkit-animation: progress-react 2s ease-in-out;
+}
+
+.active-bar.progress-mysql {
+  animation: progress-mysql 2s ease-in-out;
+  -webkit-animation: progress-mysql 2s ease-in-out;
+}
+
+.active-bar.progress-sass {
+  animation: progress-sass 2s ease-in-out;
+  -webkit-animation: progress-sass 2s ease-in-out;
+}
+
+.active-bar.progress-git {
+  animation: progress-git 2s ease-in-out;
+  -webkit-animation: progress-git 2s ease-in-out;
+}
+
+
+@keyframes progress-html {
+    0% {
+        width: 0;
+      }
+      100% {
+        width: 80%;
+      }
+}
+
+@keyframes progress-css {
+  0% {
+      width: 0;
+    }
+    100% {
+      width: 80%;
+    }
+}
+
+
+@keyframes progress-php {
+  0% {
+      width: 0;
+    }
+    100% {
+      width: 50%;
+    }
+}
+
+@keyframes progress-javascript {
+  0% {
+      width: 0;
+    }
+    100% {
+      width: 60%;
+    }
+}
+
+@keyframes progress-react {
+  0% {
+      width: 0;
+    }
+    100% {
+      width: 50%;
+    }
+}
+
+@keyframes progress-mysql {
+  0% {
+      width: 0;
+    }
+    100% {
+      width: 20%;
+    }
+}
+
+@keyframes progress-sass {
+  0% {
+      width: 0;
+    }
+    100% {
+      width: 40%;
+    }
+}
+
+@keyframes progress-git {
+  0% {
+      width: 0;
+    }
+    100% {
+      width: 50%;
+    }
+}
+
+

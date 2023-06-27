@@ -1,0 +1,39 @@
+//
+//	VARIABLES
+// ------------------------------------------------------
+
+$font-size-tel: clamp( 30px, 410%, 450%);
+$font-family-sans:  'Josefin Sans', 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-serif: 'Big Caslon', Georgia, serif;
+
+
+// $color-bg-left:  rgb(204, 243, 129);
+$color-bg-left:  #9dd49d;
+// $color-bg-right: rgb(72, 49, 212);
+$color-bg-right: #212529;
+// $color-first:    #5ada55;
+$color-first:    #9dd49d;
+$color-fi:    rgb(129, 196, 5);
+
+$color-name:     rgb(129, 196, 5);
+$color-text: 	 #ebebeb;
+$color-muted:	 #777;
+$color-strong:   #f9c029;
+
+
+$welcome: 20px;
+$post-title: 55px;
+$second-title: 40px;
+$third-title: 25px;
+
+
+$debug: false;
+$enable-rounded: true;
+$animation-speed: .15s;
+
+$height-screen: 100vh;
+$width-screen:  100vw;
+
+$width-sm: 480px;
+$width-md: 800px;
+$width-lg: 1024px;

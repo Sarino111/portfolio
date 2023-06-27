@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": " npx parcel index.html --dist-dir public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@parcel/transformer-sass": "^2.8.3",
+    "buffer": "^5.7.1",
+    "events": "^3.3.0",
+    "node-sass": "^8.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "punycode": "^1.4.1",
+    "querystring-es3": "^0.2.1",
+    "rimraf": "^4.4.1",
+    "stream-browserify": "^3.0.0",
+    "uglify-js": "^3.17.4",
+    "uglifycss": "^0.0.29",
+    "url": "^0.11.0",
+    "util": "^0.12.5"
+  }
+}

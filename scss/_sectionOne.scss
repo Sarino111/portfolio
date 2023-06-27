@@ -1,0 +1,146 @@
+/*
+// section one
+*/
+
+.section-first {
+    align-items: center;
+    justify-content: center;
+
+    min-height: $height-screen;
+
+    background: linear-gradient(
+        to right,
+        $color-bg-left 0% 30%,
+        $color-bg-right 30% 100%
+    );
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7%;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.avatar {
+    position: relative;
+    display: flex;
+    
+    z-index: 3;
+}
+
+.avatar-svg {
+    position: absolute;
+    top: 12%;
+    left: 19%;
+
+    height: inherit;
+    width: inherit;
+
+    max-width: 50vw;
+
+    scale: 2.2;
+
+    z-index: 0;
+}
+
+.photo {
+    display: inline-block;
+
+    max-width: 19rem;
+}
+
+.my-photo {
+    z-index: 5;
+
+}
+
+.cube {
+    scale: 1.0;
+    
+    stroke: #000;
+    fill: #000;
+}
+
+.waves1 {
+    scale: 1;
+
+    stroke-width: 1px;
+    stroke: #000;
+    fill: none;
+}
+
+.waves-svg {
+    position: absolute;
+    bottom: -0%;
+    left: 4%;
+
+    height: 20rem;
+    width: 21rem;
+}
+
+.waves {
+    width: inherit;
+    height: inherit;
+    scale: .5;
+
+    stroke: $color-bg-left;
+    fill: transparent;
+}
+
+.inner-text {
+    color: $color-bg-left;    
+
+    padding: 0 2rem 0rem 2rem;
+
+    min-width: 23em;
+}
+
+.welcome {
+
+    font: {
+        size: clamp( 9px, 78%, 100%);
+        family: 'Merriweather Sans', sans-serif;;
+        weight: 600;
+    }
+}
+
+small {
+    color: $color-bg-left;
+    text-shadow: 1px 1px #000;
+}
+
+h2.first-page {
+    margin: 10px 0px;
+
+    font: {
+        size: clamp( 19px, 4.1vw, 3.5rem);
+        family: 'Merriweather Sans', sans-serif;
+        weight: 600;
+    }
+
+    color: #e6cfcf;
+}
+
+h1.name {
+    color: $color-name;
+    text-shadow: 1px 1px #000;
+
+    font: {
+        size: clamp( 35px, 6.5vw, 4.1rem);
+        family: 'Merriweather Sans', sans-serif;;
+        weight: 600;
+    }  
+}
+
+.target {
+    max-width: 32rem;
+    margin-top: 2rem;
+
+    text-shadow: em(1) em(1) #000;
+}

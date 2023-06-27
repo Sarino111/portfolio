@@ -1,0 +1,217 @@
+/*
+// section three
+*/
+
+section.section-third  {
+
+    align-items: center;
+
+    min-height: $height-screen;
+
+    justify-content: center;
+
+    background-color: #eee;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    gap: clamp( em(20) , 1% ,em(450) );
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;    
+}
+
+.post-education,
+.post-skills {
+    font: {
+        family: Lexend Deca, sans-serif;
+    }
+}
+
+.post-education {
+	margin-top: 2rem;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    padding: .1% 1vw 5% 1vw;
+    gap: clamp( em(12) ,em(15), em(28) );
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height:  100vh;
+    max-width: 50%;
+
+    font: {
+        family: Lexend Deca, sans-serif;
+    }
+    background: $color-first;
+}
+
+.post-education {
+    margin-bottom: clamp( .2%, .9%, 5% );
+    margin: 1.7rem 0 .5rem 0;
+    text-align: center;
+}
+
+div.school {
+    border-bottom: 2px #000 solid;
+}
+
+.courses,
+.school p {
+    width: inherit;
+}
+
+div.school-fourth {
+    border-bottom: none;
+}
+
+.school p {
+    margin-top: clamp( em(.5), em(1), em(1.1) );
+    margin-bottom: clamp( em(.5), em(1), em(1.1) );
+}
+
+.name-school {
+    margin-top: em(5);
+    margin-bottom: em(5);
+
+    font: {
+        family: Lexend Deca, sans-serif;
+        size: clamp( 14px, em(16), 19px);
+    }
+}
+
+.courses {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.specialization {
+    font-style: italic;
+}
+
+// ///////////////////////////////////////////
+/*
+//  bar 
+*/
+// ////////////////////////////////////////////
+
+.chart-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+}
+
+.element-bar {
+    width: clamp( 10rem ,30rem, 34rem );
+
+    max-width: 85%;
+
+    margin-top: clamp( em(13) ,em(12), em(15) );
+
+    font: {
+        size: clamp( 14px, 1.6vw, 17px );
+    }
+}
+
+.bar {
+    height: clamp( em(18) , 1.5vh, em(28) );
+    background-color: $color-first;
+    border-radius: em(10);
+}
+
+.bar-container {
+    position: relative;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.progress-bar-text {
+    display: block;
+    margin-bottom: em(3);
+    margin-left: em(10);
+
+    font: {
+        family: Lexend Deca, sans-serif;
+        weight: 300;
+    }
+}
+
+.progress-bar {
+    display: flex;
+    height: 100%;
+
+    background: $color-bg-right;
+    border-top-left-radius: em(10);
+    border-bottom-left-radius: em(10);
+}
+
+.progress-html {
+    width: 80%;
+}
+
+.progress-css {
+    width: 80%;
+}
+
+.progress-php {
+    width: 50%;
+}
+
+.progress-javascript {
+    width: 60%;
+}
+
+.progress-react {
+    width: 50%;
+}
+
+.progress-mysql {
+    width: 20%;
+}
+
+.progress-sass {
+    width: 40%;
+}
+
+.progress-git {
+    width: 50%;
+}
+
+.progress-text {
+    flex-grow: 1;
+}
+
+.progress-percentage {
+    display: flex;
+    color: #fff;
+    margin-right: em(10);
+
+    font: {
+        size: em(13);
+        weight: 400;
+        family: Lexend Deca, sans-serif;
+    }
+
+    align-items: center;
+    text-align: center;
+}
